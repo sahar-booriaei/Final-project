@@ -6,6 +6,7 @@ const plants = [
         Light: "Low to Bright Indirect",
         Water: "Medium",
         price: "$25.00",
+        imgSrc: "1.webp",
     },
      {
         id: 2,
@@ -13,6 +14,7 @@ const plants = [
         Light: "Low to Bright Indirect",
         Water: "Medium",
         price: "$45.00",
+        imgSrc: "2.webp",
     },
      {
         id: 3,
@@ -20,6 +22,7 @@ const plants = [
         Light: "Bright Indirect",
         Water: "Medium",
         price: "$49.00",
+        imgSrc: "3.webp",
     },
      {
         id: 4,
@@ -27,6 +30,8 @@ const plants = [
         Light: "Bright Indirect",
         Water: "Low to Medium",
         price: "$39.00",
+        imgSrc: "4.webp",
+
     },
      {
         id: 5,
@@ -34,6 +39,8 @@ const plants = [
         Light: "Low to Bright Indirect",
         Water: "Medium",
         price: "$45.00",
+        imgSrc: "5.webp",
+
     },
      {
         id: 6,
@@ -41,6 +48,8 @@ const plants = [
         Light: "Low to Bright Indirect",
         Water: "Medium to High",
         price: "$55.00",
+        imgSrc: "6.webp",
+
     },
     {
         id: 7,
@@ -48,6 +57,8 @@ const plants = [
         Light: "Low to Bright Indirect",
         Water: "Medium",
         price: "$25.00",
+        imgSrc: "7.webp",
+
     },
     {
         id: 8,
@@ -55,6 +66,8 @@ const plants = [
         Light: "Low to Bright Indirect",
         Water: "Low",
         price: "$25.00",
+        imgSrc: "8.webp",
+
     },
     {
         id: 9,
@@ -62,6 +75,8 @@ const plants = [
         Light: "Low to Bright Indirect",
         Water: "Medium to High",
         price: "$98.00",
+        imgSrc: "9.webp",
+
     },
     {
         id: 10,
@@ -69,6 +84,8 @@ const plants = [
         Light: "Bright Indirect",
         Water: "Low to Medium",
         price: "$49.00",
+        imgSrc: "10.webp",
+
     },
     {
         id: 11,
@@ -76,6 +93,8 @@ const plants = [
         Light: "Low to Bright Indirect",
         Water: "Low",
         price: "$19.50",
+        imgSrc: "11.webp",
+
     },
      {
         id: 12,
@@ -83,6 +102,8 @@ const plants = [
         Light: "Low to Bright Indirect",
         Water: "Medium",
         price: "$32.00",
+        imgSrc: "12.webp",
+
     },
      {
         id: 13,
@@ -90,6 +111,8 @@ const plants = [
         Light: "Bright Indirect",
         Water: "Low to Medium",
         price: "$59.00",
+        imgSrc: "13.webp",
+
     },
      {
         id: 14,
@@ -97,6 +120,8 @@ const plants = [
         Light: "Low to Medium",
         Water: "Medium",
         price: "$25.00",
+        imgSrc: "14.webp",
+
     },
      {
         id: 15,
@@ -104,6 +129,8 @@ const plants = [
         Light: "Low to Bright Indirect",
         Water: "Medium",
         price: "$110.00",
+        imgSrc: "15.webp",
+
     },
      {
         id: 16,
@@ -111,6 +138,8 @@ const plants = [
         Light: "Bright Indirect",
         Water: "Low to Medium",
         price: "$39.00",
+        imgSrc: "16.webp",
+
     },
     {
         id: 17,
@@ -118,6 +147,8 @@ const plants = [
         Light: "Medium to Bright Indirect",
         Water: "Low to Medium",
         price: "$22.50",
+        imgSrc: "17.webp",
+
     },
     {
         id: 18,
@@ -125,6 +156,8 @@ const plants = [
         Light: "Medium Bright",
         Water: "Medium",
         price: "$18.50",
+        imgSrc: "18.webp",
+
     },
     {
         id: 19,
@@ -132,6 +165,8 @@ const plants = [
         Light: "Low to Bright Indirect",
         Water: "Medium",
         price: "$49.00",
+        imgSrc: "19.webp",
+
     },
     {
         id: 20,
@@ -139,5 +174,7 @@ const plants = [
         Light: "Bright Indirect",
         Water: "Low to Medium",
         price: "$69.00",
+        imgSrc: "20.webp",
+
     }
 ]
