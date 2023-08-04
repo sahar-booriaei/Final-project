@@ -60,6 +60,7 @@ body {
 
 .second {
   background-color: #52723a;
+  text-align: center;
 }
 .second div {
   flex-wrap: wrap;
@@ -68,7 +69,7 @@ body {
   width: 22%;
   height: 700px;
   padding: 1rem;
-  background-color: lightgreen;
+  background-color: rgb(156, 185, 156);
   margin: 1rem;
 }
 .second div .plant img {
