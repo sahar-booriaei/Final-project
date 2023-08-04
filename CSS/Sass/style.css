@@ -4,5 +4,6 @@ body {
 }
 
 #top {
-  background-image: url("./Images/hero-section-bg.jpg");
+  background-image: url("/Images/hero-section-bg.jpg");
+  height: 100vh;
 }/*# sourceMappingURL=style.css.map */
