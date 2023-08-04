@@ -7,13 +7,6 @@ body {
   box-sizing: border-box;
 }
 
-.top {
-  background-image: url("../Images/hero-section-bg.jpg");
-  height: 100vh;
-  position: relative;
-  background-size: cover;
-  background-position: bottom;
-}
 #top {
   background-color: rgb(0, 0, 0);
   opacity: 0.5;
@@ -22,4 +15,20 @@ body {
   height: 100%;
   top: 0;
   right: 0;
+}
+
+.top {
+  background-image: url("../Images/hero-section-bg.jpg");
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+  background-position: bottom;
+}
+.top header img {
+  opacity: 1;
+  z-index: 1;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 13%;
 }/*# sourceMappingURL=style.css.map */
