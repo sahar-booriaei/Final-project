@@ -4,7 +4,7 @@ function render(plantslist) {
     const template = plantslist.map((plant, index) => {
       const { id, name, Light, Water, price, imgSrc } = plant;
       return `
-        <section class="product" >
+        <section class="plant" >
             <img src="./CSS/Images/${imgSrc}">
                 <div class="card">
                      <h3> Name: ${name}</h3>

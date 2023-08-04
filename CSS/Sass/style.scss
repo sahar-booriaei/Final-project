@@ -63,10 +63,17 @@ body {
             font-size: 4rem;
             opacity: .6;
         }
+
     }
 }
 
 .second {
     background-color: #52723a;
     height: 100vh;
+    div {
+        flex-wrap: wrap;
+        .plant {
+
+        }
+    }
 }
