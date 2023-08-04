@@ -28,7 +28,18 @@ body {
   opacity: 1;
   z-index: 1;
   position: absolute;
-  top: 5%;
-  left: 5%;
+  top: 2rem;
+  left: 2rem;
   width: 13%;
+}
+.top header nav {
+  position: absolute;
+  z-index: 1;
+  right: 2rem;
+  top: 2rem;
+}
+.top header nav a {
+  text-decoration: none;
+  color: white;
+  right: 2rem;
 }/*# sourceMappingURL=style.css.map */
