@@ -69,11 +69,23 @@ body {
 
 .second {
     background-color: #52723a;
-    height: 100vh;
+    // height: 100vh;
+
     div {
         flex-wrap: wrap;
-        .plant {
 
+        .plant {
+            width: 22%;
+            height: 700px;
+            padding: 1rem;
+            background-color: lightgreen;
+            margin: 1rem;
+
+            img {
+                width: 100%;
+                height: 350px;
+                margin-bottom: 1rem;
+            }
         }
     }
 }
