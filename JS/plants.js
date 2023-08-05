@@ -8,7 +8,7 @@ const plants = [
         price: "$25.00",
         imgSrc: "1.webp",
     },
-     {
+    {
         id: 2,
         name: "Tropic Marianne",
         Light: "Low to Bright Indirect",
@@ -16,7 +16,7 @@ const plants = [
         price: "$45.00",
         imgSrc: "2.webp",
     },
-     {
+    {
         id: 3,
         name: "Ficus Lyrata",
         Light: "Bright Indirect",
@@ -24,35 +24,24 @@ const plants = [
         price: "$49.00",
         imgSrc: "3.webp",
     },
-     {
+    {
         id: 4,
         name: "Hoya Chelsea",
         Light: "Bright Indirect",
         Water: "Low to Medium",
         price: "$39.00",
         imgSrc: "4.webp",
-
     },
-     {
+    {
         id: 5,
         name: "Cordyline 'Ruby'",
         Light: "Low to Bright Indirect",
         Water: "Medium",
         price: "$45.00",
         imgSrc: "5.webp",
-
-    },
-     {
-        id: 6,
-        name: "Calathea Green Lipstick",
-        Light: "Low to Bright Indirect",
-        Water: "Medium to High",
-        price: "$55.00",
-        imgSrc: "6.webp",
-
     },
     {
-        id: 7,
+        id: 6,
         name: "Purple Shamrock",
         Light: "Low to Bright Indirect",
         Water: "Medium",
@@ -61,8 +50,8 @@ const plants = [
 
     },
     {
-        id: 8,
-        name: "Sansevieria Silver Princess",
+        id: 7,
+        name: "Sansevieria Silver",
         Light: "Low to Bright Indirect",
         Water: "Low",
         price: "$25.00",
@@ -70,7 +59,7 @@ const plants = [
 
     },
     {
-        id: 9,
+        id: 8,
         name: "Calathea Misto",
         Light: "Low to Bright Indirect",
         Water: "Medium to High",
@@ -79,7 +68,7 @@ const plants = [
 
     },
     {
-        id: 10,
+        id: 9,
         name: "Hoya Green Ghost",
         Light: "Bright Indirect",
         Water: "Low to Medium",
@@ -88,7 +77,7 @@ const plants = [
 
     },
     {
-        id: 11,
+        id: 10,
         name: "Sansevieria Sunshine",
         Light: "Low to Bright Indirect",
         Water: "Low",
@@ -96,8 +85,8 @@ const plants = [
         imgSrc: "11.webp",
 
     },
-     {
-        id: 12,
+    {
+        id: 11,
         name: "Farfugium 'Firefly'",
         Light: "Low to Bright Indirect",
         Water: "Medium",
@@ -105,35 +94,17 @@ const plants = [
         imgSrc: "12.webp",
 
     },
-     {
-        id: 13,
-        name: "Hoya rangsan",
-        Light: "Bright Indirect",
-        Water: "Low to Medium",
-        price: "$59.00",
+    {
+        id: 12,
+        name: "Syngonium Berry",
+        Light: "Low to Bright Indirect",
+        Water: "Medium",
+        price: "$45.00",
         imgSrc: "13.webp",
 
     },
-     {
-        id: 14,
-        name: "Chinese Evergreen 'Butterfly'",
-        Light: "Low to Medium",
-        Water: "Medium",
-        price: "$25.00",
-        imgSrc: "14.webp",
-
-    },
-     {
-        id: 15,
-        name: "Philodendron 'Summer Glory'",
-        Light: "Low to Bright Indirect",
-        Water: "Medium",
-        price: "$110.00",
-        imgSrc: "15.webp",
-
-    },
-     {
-        id: 16,
+    {
+        id: 13,
         name: "Hoya Australis Hoop",
         Light: "Bright Indirect",
         Water: "Low to Medium",
@@ -142,25 +113,15 @@ const plants = [
 
     },
     {
-        id: 17,
+        id: 14,
         name: "Pothos Silvery Anne",
-        Light: "Medium to Bright Indirect",
+        Light: "Medium Indirect",
         Water: "Low to Medium",
         price: "$22.50",
         imgSrc: "17.webp",
-
     },
     {
-        id: 18,
-        name: "Spider Plant Hawaiian",
-        Light: "Medium Bright",
-        Water: "Medium",
-        price: "$18.50",
-        imgSrc: "18.webp",
-
-    },
-    {
-        id: 19,
+        id: 15,
         name: "Monstera deliciosa",
         Light: "Low to Bright Indirect",
         Water: "Medium",
@@ -169,12 +130,47 @@ const plants = [
 
     },
     {
-        id: 20,
+        id: 16,
         name: "Winged Pitcher Plant",
         Light: "Bright Indirect",
         Water: "Low to Medium",
         price: "$69.00",
         imgSrc: "20.webp",
+
+    },
+    {
+        id: 17,
+        name: "Spider Plant Hawaiian",
+        Light: "Medium Bright",
+        Water: "Medium",
+        price: "$18.50",
+        imgSrc: "18.webp",
+
+    },
+    {
+        id: 18,
+        name: "Calathea Green Lipstick",
+        Light: "Low to Bright Indirect",
+        Water: "Medium to High",
+        price: "$55.00",
+        imgSrc: "6.webp",
+    },
+    {
+        id: 19,
+        name: "Chinese Evergreen 'Butterfly'",
+        Light: "Low to Medium",
+        Water: "Medium",
+        price: "$25.00",
+        imgSrc: "14.webp",
+
+    },
+    {
+        id: 20,
+        name: "Philodendron 'Summer Glory'",
+        Light: "Low to Bright Indirect",
+        Water: "Medium",
+        price: "$110.00",
+        imgSrc: "15.webp",
 
     }
 ]
