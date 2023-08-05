@@ -174,21 +174,37 @@ body {
     flex-direction: column;
     background-position: bottom;
     position: relative;
+
     div {
         position: absolute;
         text-align: center;
         line-height: 5rem;
+
         h1 {
             font-size: 4rem;
             opacity: .7;
         }
+
         button {
             text-decoration: none;
             padding: 4px 32px;
             border: none;
-        line-height: 2.5rem;
+            line-height: 2.5rem;
 
         }
     }
 
+}
+
+
+.sixth {
+    width: 90%;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    height: 35vh;
+
+    div {
+        margin: 2rem;
+    }
 }
