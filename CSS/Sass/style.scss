@@ -209,3 +209,35 @@ body {
         margin: 2rem;
     }
 }
+
+footer {
+    background-color: #25301c;
+    color: white;
+    flex-direction: column;
+    padding: 4rem;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    div {
+        text-align: center;
+
+        h4 {
+            margin-top: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        input {
+            padding: 8px 128px;
+        }
+
+        button {
+            padding: 8px 16px;
+            margin-left: 1rem;
+            border: none;
+            background-color: #7bab57;
+        }
+    }
+}

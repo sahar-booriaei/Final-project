@@ -172,4 +172,31 @@ body {
 }
 .sixth div {
   margin: 2rem;
+}
+
+footer {
+  background-color: #25301c;
+  color: white;
+  flex-direction: column;
+  padding: 4rem;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer div {
+  text-align: center;
+}
+footer div h4 {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+footer div input {
+  padding: 8px 128px;
+}
+footer div button {
+  padding: 8px 16px;
+  margin-left: 1rem;
+  border: none;
+  background-color: #7bab57;
 }/*# sourceMappingURL=style.css.map */
