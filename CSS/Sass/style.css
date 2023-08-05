@@ -55,7 +55,7 @@ body {
 }
 .top .top__content h1 {
   font-size: 4rem;
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 .second {
@@ -125,4 +125,39 @@ body {
 }
 .fourth div div .opacity {
   opacity: 0.7;
+}
+
+#bottom {
+  background-color: rgb(0, 0, 0);
+  opacity: 0.5;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+
+.fifth {
+  height: 100vh;
+  background-image: url("../Images/footer-background.jpg");
+  background-size: cover;
+  color: white;
+  flex-direction: column;
+  background-position: bottom;
+  position: relative;
+}
+.fifth div {
+  position: absolute;
+  text-align: center;
+  line-height: 5rem;
+}
+.fifth div h1 {
+  font-size: 4rem;
+  opacity: 0.7;
+}
+.fifth div button {
+  text-decoration: none;
+  padding: 4px 32px;
+  border: none;
+  line-height: 2.5rem;
 }/*# sourceMappingURL=style.css.map */
