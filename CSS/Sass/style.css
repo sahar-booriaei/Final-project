@@ -92,4 +92,8 @@ body {
 }
 .third div div button {
   margin: 2rem 0;
+  background-color: #52723a;
+  text-decoration: none;
+  color: white;
+  padding: 8px 16px;
 }/*# sourceMappingURL=style.css.map */
