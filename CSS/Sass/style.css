@@ -96,4 +96,17 @@ body {
   text-decoration: none;
   color: white;
   padding: 8px 16px;
+}
+
+.fourth {
+  height: 100vh;
+  flex-direction: column;
+}
+.fourth h2 {
+  margin-bottom: 2rem;
+}
+.fourth span {
+  display: block;
+  border-bottom: 0.5px solid #52723a;
+  width: 5%;
 }/*# sourceMappingURL=style.css.map */

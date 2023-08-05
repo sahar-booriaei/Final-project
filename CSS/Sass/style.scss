@@ -118,3 +118,17 @@ body {
         }
     }
 }
+
+
+.fourth {
+    height: 100vh;
+    flex-direction: column;
+    h2 {
+       margin-bottom: 2rem;
+    }
+    span {
+        display: block;
+        border-bottom: .5px solid #52723a;
+        width: 5%;
+    }
+}
