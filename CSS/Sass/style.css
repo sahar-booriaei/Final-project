@@ -94,6 +94,7 @@ body {
   margin: 2rem 0;
   background-color: #52723a;
   text-decoration: none;
+  border: none;
   color: white;
   padding: 8px 16px;
 }
