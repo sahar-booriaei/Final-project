@@ -104,9 +104,22 @@ body {
 }
 .fourth h2 {
   margin-bottom: 2rem;
+  margin-top: 6rem;
 }
 .fourth span {
   display: block;
   border-bottom: 0.5px solid #52723a;
   width: 5%;
+}
+.fourth div {
+  width: 80%;
+  margin: auto;
+}
+.fourth div div {
+  text-align: center;
+  padding: 2rem;
+}
+.fourth div div img {
+  border-radius: 50%;
+  margin: 2rem;
 }/*# sourceMappingURL=style.css.map */
