@@ -102,7 +102,7 @@ body {
   height: 100vh;
   flex-direction: column;
 }
-.fourth h2 {
+.fourth h1 {
   margin-bottom: 2rem;
   margin-top: 6rem;
 }
@@ -122,4 +122,7 @@ body {
 .fourth div div img {
   border-radius: 50%;
   margin: 2rem;
+}
+.fourth div div .opacity {
+  opacity: 0.7;
 }/*# sourceMappingURL=style.css.map */
