@@ -7,10 +7,10 @@ function render(plantslist) {
         <section class="plant" >
             <img src="./CSS/Images/${imgSrc}">
                 <div class="card">
-                     <h5 class="pt-4"> Name: ${name}</h5>
-                     <h5 class="pt-4"> Light: ${Light}</h5>
-                     <h5 class="pt-4"> Water: ${Water}</h5>
-                     <h5 class="pt-4"> Price: ${price}</h5>
+                     <h5 class="pt-4"> Name: ${name}</h6>
+                     <h6 class="pt-4"> Light: ${Light}</h6>
+                     <h6 class="pt-4"> Water: ${Water}</h6>
+                     <h6 class="pt-4"> Price: ${price}</h6>
                      <button onclick="addToCart()">SHOP NOW</button>
                 </div>  
         </section>
