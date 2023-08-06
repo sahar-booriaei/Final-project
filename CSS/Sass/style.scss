@@ -71,8 +71,23 @@ body {
     background-color: #85ac66;
     text-align: center;
     padding-top: 2rem;
-    padding-bottom: 5rem;
+    padding-bottom: 4rem;
+    flex-direction: column;
     // height: 100vh;#52723a
+
+    nav {
+        margin-top: 3rem;
+        ul {
+            li {
+                a {
+                    color: #25301c;
+                    border: 1px solid;
+                    padding: 8px 24px;
+                }
+            }
+        }
+       
+    }
 
     h1 {
         color: white;

@@ -62,7 +62,16 @@ body {
   background-color: #85ac66;
   text-align: center;
   padding-top: 2rem;
-  padding-bottom: 5rem;
+  padding-bottom: 4rem;
+  flex-direction: column;
+}
+.second nav {
+  margin-top: 3rem;
+}
+.second nav ul li a {
+  color: #25301c;
+  border: 1px solid;
+  padding: 8px 24px;
 }
 .second h1 {
   color: white;
