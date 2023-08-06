@@ -140,7 +140,7 @@ const plants = [
     },
     {
         id: 17,
-        name: "Spider Plant Hawaiian",
+        name: "Spider Plant Green Hawaiian",
         Light: "Medium Bright",
         Water: "Medium",
         price: "$18.50",

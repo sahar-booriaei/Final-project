@@ -70,6 +70,8 @@ body {
 .second {
     background-color: #52723a;
     text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
     // height: 100vh;
 
     div {
@@ -79,8 +81,21 @@ body {
             width: 22%;
             height: 700px;
             padding: 1rem;
-            background-color: rgb(156, 185, 156);
+            background-color: rgb(235, 255, 235);
             margin: 1rem;
+
+            div {
+                background-color: rgb(235, 255, 235);
+                border: none;
+                text-align: left;
+                button {
+                    border: none;
+                    background-color: #7bab57;
+                    color: white;
+                    padding: 8px 0;
+                    margin-top: 1.5rem;
+                }
+            }
 
             img {
                 width: 100%;
@@ -206,7 +221,7 @@ body {
     height: 35vh;
 
     div {
-        margin: 2rem;
+        margin: 1rem;
     }
 }
 
