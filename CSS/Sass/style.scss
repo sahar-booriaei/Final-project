@@ -68,11 +68,15 @@ body {
 }
 
 .second {
-    background-color: #52723a;
+    background-color: #85ac66;
     text-align: center;
     padding-top: 2rem;
     padding-bottom: 5rem;
-    // height: 100vh;
+    // height: 100vh;#52723a
+
+    h1 {
+        color: white;
+    }
 
     div {
         flex-wrap: wrap;
@@ -82,15 +86,17 @@ body {
             height: 700px;
             padding: 1rem;
             background-color: rgb(235, 255, 235);
+            box-shadow: 10px 10px 10px 0 rgba(61, 61, 61, 0.5);
             margin: 1rem;
 
             div {
                 background-color: rgb(235, 255, 235);
                 border: none;
                 text-align: left;
+
                 button {
                     border: none;
-                    background-color: #7bab57;
+                    background-color: #52723a;
                     color: white;
                     padding: 8px 0;
                     margin-top: 1.5rem;
