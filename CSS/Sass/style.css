@@ -89,6 +89,7 @@ body {
   color: white;
   padding: 8px 0;
   margin-top: 1.5rem;
+  border-radius: 8px;
 }
 .second div .plant img {
   width: 100%;
@@ -114,7 +115,8 @@ body {
   text-decoration: none;
   border: none;
   color: white;
-  padding: 8px 16px;
+  padding: 8px 24px;
+  border-radius: 8px;
 }
 
 .fourth {
@@ -184,6 +186,7 @@ body {
   padding: 4px 32px;
   border: none;
   line-height: 2.5rem;
+  border-radius: 8px;
 }
 
 .sixth {
