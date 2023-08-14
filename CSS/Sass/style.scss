@@ -45,6 +45,22 @@ body {
                 text-decoration: none;
                 color: white;
                 right: 2rem;
+                padding: 2rem;
+                transition: .5s;
+
+                &:hover {
+                    opacity: .7;
+                    border-bottom: 1px solid white;
+                    padding-bottom: 8px;
+                }
+            }
+
+            .shopping-icon {
+                opacity: 1 !important;
+
+                &:hover {
+                    opacity: 1 !important;
+                }
             }
         }
     }
@@ -120,8 +136,15 @@ body {
                     background-color: #52723a;
                     color: white;
                     padding: 8px 0;
-                    margin-top: 1rem;
                     border-radius: 8px;
+                    width: 80%;
+                    margin: 1rem auto 0 auto;
+                    transition: .5s;
+
+                    &:hover {
+                        scale: 1.1;
+                        background-color: #25301c;
+                    }
                 }
             }
 
@@ -160,6 +183,11 @@ body {
                 color: white;
                 padding: 8px 24px;
                 border-radius: 8px;
+                transition: .5s;
+
+                &:hover {
+                    scale: 1.1;
+                }
             }
         }
     }
@@ -188,6 +216,11 @@ body {
         div {
             text-align: center;
             padding: 2rem;
+            transition: .5s;
+
+            &:hover {
+                scale: 1.1;
+            }
 
             svg {
                 margin-bottom: 2rem;
@@ -243,6 +276,12 @@ body {
             border: none;
             line-height: 2.5rem;
             border-radius: 8px;
+            transition: .5s;
+
+            &:hover {
+                scale: 1.1;
+                background-color: #85ac66;
+            }
 
         }
     }
@@ -259,6 +298,17 @@ body {
 
     div {
         margin: 1rem;
+        transition: .5s;
+
+        &:hover {
+            scale: 1.1;
+
+            .icon {
+                color: #7bab57;
+                background-color: white;
+                border: 1px solid #7bab57;
+            }
+        }
 
         .icon {
             background-color: #7bab57;
@@ -279,6 +329,14 @@ footer {
     a {
         text-decoration: none;
         color: white;
+        transition: .5s;
+
+        &:hover {
+            opacity: .7;
+            border-bottom: 1px solid white;
+            padding-bottom: 8px;
+            scale: 1.1;
+        }
     }
 
     div {
@@ -298,6 +356,13 @@ footer {
             margin-left: 1rem;
             border: none;
             background-color: #7bab57;
+            transition: .5s;
+
+            &:hover {
+                scale: 1.1;
+                background-color: #52723a;
+                color: white;
+            }
         }
     }
 
@@ -307,6 +372,12 @@ footer {
         svg {
             margin: 2rem 2rem 0 2rem;
             opacity: .7;
+            transition: .5s;
+
+            &:hover {
+                scale: 1.6;
+                opacity: 1;
+            }
         }
     }
 }

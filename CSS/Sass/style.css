@@ -42,6 +42,19 @@ body {
   text-decoration: none;
   color: white;
   right: 2rem;
+  padding: 2rem;
+  transition: 0.5s;
+}
+.top header nav a:hover {
+  opacity: 0.7;
+  border-bottom: 1px solid white;
+  padding-bottom: 8px;
+}
+.top header nav .shopping-icon {
+  opacity: 1 !important;
+}
+.top header nav .shopping-icon:hover {
+  opacity: 1 !important;
 }
 .top .top__content {
   color: white;
@@ -100,8 +113,14 @@ body {
   background-color: #52723a;
   color: white;
   padding: 8px 0;
-  margin-top: 1rem;
   border-radius: 8px;
+  width: 80%;
+  margin: 1rem auto 0 auto;
+  transition: 0.5s;
+}
+.second div .plant div button:hover {
+  scale: 1.1;
+  background-color: #25301c;
 }
 .second div .plant img {
   width: 100%;
@@ -129,6 +148,10 @@ body {
   color: white;
   padding: 8px 24px;
   border-radius: 8px;
+  transition: 0.5s;
+}
+.third div div button:hover {
+  scale: 1.1;
 }
 
 .fourth {
@@ -151,6 +174,10 @@ body {
 .fourth div div {
   text-align: center;
   padding: 2rem;
+  transition: 0.5s;
+}
+.fourth div div:hover {
+  scale: 1.1;
 }
 .fourth div div svg {
   margin-bottom: 2rem;
@@ -199,6 +226,11 @@ body {
   border: none;
   line-height: 2.5rem;
   border-radius: 8px;
+  transition: 0.5s;
+}
+.fifth div button:hover {
+  scale: 1.1;
+  background-color: #85ac66;
 }
 
 .sixth {
@@ -210,6 +242,15 @@ body {
 }
 .sixth div {
   margin: 1rem;
+  transition: 0.5s;
+}
+.sixth div:hover {
+  scale: 1.1;
+}
+.sixth div:hover .icon {
+  color: #7bab57;
+  background-color: white;
+  border: 1px solid #7bab57;
 }
 .sixth div .icon {
   background-color: #7bab57;
@@ -228,6 +269,13 @@ footer {
 footer a {
   text-decoration: none;
   color: white;
+  transition: 0.5s;
+}
+footer a:hover {
+  opacity: 0.7;
+  border-bottom: 1px solid white;
+  padding-bottom: 8px;
+  scale: 1.1;
 }
 footer div {
   text-align: center;
@@ -244,6 +292,12 @@ footer div button {
   margin-left: 1rem;
   border: none;
   background-color: #7bab57;
+  transition: 0.5s;
+}
+footer div button:hover {
+  scale: 1.1;
+  background-color: #52723a;
+  color: white;
 }
 footer .footer_svg {
   padding-top: 3rem;
@@ -251,4 +305,9 @@ footer .footer_svg {
 footer .footer_svg svg {
   margin: 2rem 2rem 0 2rem;
   opacity: 0.7;
+  transition: 0.5s;
+}
+footer .footer_svg svg:hover {
+  scale: 1.6;
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */
