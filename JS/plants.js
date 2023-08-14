@@ -2,7 +2,7 @@
 const plants = [
     {
         id: 1,
-        name: "Alocasia Black Velvet",
+        name: "Alocasia Velvet",
         Light: "Low to Bright Indirect",
         Water: "Medium",
         price: "$25.00",
@@ -78,12 +78,11 @@ const plants = [
     },
     {
         id: 10,
-        name: "Sansevieria Sunshine",
+        name: "Monstera deliciosa",
         Light: "Low to Bright Indirect",
-        Water: "Low",
-        price: "$19.50",
-        imgSrc: "11.webp",
-
+        Water: "Medium",
+        price: "$49.00",
+        imgSrc: "19.webp", 
     },
     {
         id: 11,
@@ -122,12 +121,11 @@ const plants = [
     },
     {
         id: 15,
-        name: "Monstera deliciosa",
+        name: "Sansevieria Sunshine",
         Light: "Low to Bright Indirect",
-        Water: "Medium",
-        price: "$49.00",
-        imgSrc: "19.webp",
-
+        Water: "Low",
+        price: "$19.50",
+        imgSrc: "11.webp",
     },
     {
         id: 16,
