@@ -82,7 +82,7 @@ const plants = [
         Light: "Low to Bright Indirect",
         Water: "Medium",
         price: "$49.00",
-        imgSrc: "19.webp", 
+        imgSrc: "19.webp",
     },
     {
         id: 11,

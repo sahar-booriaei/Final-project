@@ -52,6 +52,23 @@ body {
 }
 .top header nav .shopping-icon {
   opacity: 1 !important;
+  position: relative;
+  padding-right: 1.2rem;
+  padding-top: 1.2rem;
+  margin-left: 2rem;
+}
+.top header nav .shopping-icon span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 .top header nav .shopping-icon:hover {
   opacity: 1 !important;
