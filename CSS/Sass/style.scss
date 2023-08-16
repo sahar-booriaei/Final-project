@@ -7,34 +7,103 @@ body {
     box-sizing: border-box;
 }
 
+.basket {
+    width: 100%;
+    padding: 2rem 5rem 1rem 5rem;
+    background-color: #556d50;
+    color: white;
+    font-size: 1rem;
+
+    .basket__home {
+        text-decoration: none;
+        padding: 8px 16px;
+        color: white;
+        transition: .5s;
+
+        &:hover {
+            border-bottom: 1px solid #85ac66;
+            color: #85ac66;
+
+        }
+    }
+
+    .basket__a {
+        position: relative;
+        display: block;
+        color: white;
+        cursor: context-menu;
+
+        &:hover {
+            color: #85ac66;
+        }
+
+        span {
+            position: absolute;
+            right: -24px;
+            top: -16px;
+            border-radius: 50%;
+            background-color: white;
+            color: black;
+            width: 24px;
+            height: 24px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+    }
+
+
+}
 
 .basketData {
     width: 100%;
     margin: 0;
-    background-color: #25301c;
+    background-color: #556d50;
+    padding-bottom: 3rem;
+
 
     .basketItem {
         width: 80%;
+        // height: 300px;
+        margin: auto;
         display: flex;
         justify-content: space-around;
         align-items: center;
         background-color: #85ac66 !important;
-        padding: 1rem;
         margin: 1rem;
+        box-shadow: 10px 10px 10px 0 rgba(40, 40, 40, 0.6);
+
+
+        div {
+            width: 70%;
+
+            button {
+                text-decoration: none;
+                padding: 4px 32px;
+                border: none;
+                // line-height: 2.5rem;
+                border-radius: 8px;
+                transition: .5s;
+
+                &:hover {
+                    scale: 1.1;
+                    background-color: #25301c;
+                    color: white;
+                }
+
+            }
+        }
+
+        img {
+            width: 200px;
+            padding: 1rem;
+
+        }
+
 
     }
-
-    .basketItem img {
-        width: 120px;
-    }
-
-    .basketItem .card {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex: 1;
-    }
-
 }
 
 
@@ -190,6 +259,7 @@ body {
 
                 .primary {
                     background-color: darkred !important;
+
                     &:hover {
                         scale: 1;
                         opacity: .7;

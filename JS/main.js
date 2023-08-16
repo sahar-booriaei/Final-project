@@ -12,6 +12,12 @@ let start = 0;
 let end = 4;
 
 
+
+let BasketStore = localStorage.getItem("Basket");
+Basket = JSON.parse(BasketStore);
+updateBasketCounter();
+
+
 // events
 
 one.addEventListener("click", () => {
@@ -71,9 +77,6 @@ five.addEventListener("click", () => {
 })
 
 
-let BasketStore = localStorage.getItem("Basket");
-Basket = JSON.parse(BasketStore);
-updateBasketCounter();
 
 window.addEventListener("load", () => {
   render(plants);
