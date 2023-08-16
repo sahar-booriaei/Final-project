@@ -7,6 +7,30 @@ body {
   box-sizing: border-box;
 }
 
+.basketData {
+  width: 100%;
+  margin: 0;
+  background-color: #25301c;
+}
+.basketData .basketItem {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #85ac66 !important;
+  padding: 1rem;
+  margin: 1rem;
+}
+.basketData .basketItem img {
+  width: 120px;
+}
+.basketData .basketItem .card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+}
+
 #top {
   background-color: rgb(0, 0, 0);
   opacity: 0.5;
@@ -89,7 +113,7 @@ body {
 }
 
 .second {
-  background-color: #85ac66;
+  background-color: #556d50;
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 3rem;
@@ -99,7 +123,7 @@ body {
   margin-top: 2rem;
 }
 .second nav ul {
-  box-shadow: 10px 10px 10px 0 rgba(61, 61, 61, 0.6);
+  box-shadow: 10px 10px 10px 0 rgba(40, 40, 40, 0.6);
 }
 .second nav ul li a {
   color: #25301c;
@@ -116,8 +140,9 @@ body {
   width: 300px;
   height: 550px;
   background-color: rgb(235, 255, 235);
-  box-shadow: 10px 10px 10px 0 rgba(61, 61, 61, 0.6);
+  box-shadow: 10px 10px 10px 0 rgba(23, 23, 23, 0.6);
   margin: 1rem;
+  border-radius: 8px;
 }
 .second div .plant div {
   background-color: rgb(235, 255, 235);
@@ -128,9 +153,17 @@ body {
 .second div .plant div h6 {
   margin: 0;
 }
+.second div .plant div .primary {
+  background-color: darkred !important;
+}
+.second div .plant div .primary:hover {
+  scale: 1;
+  opacity: 0.7;
+  cursor: context-menu;
+}
 .second div .plant div button {
   border: none;
-  background-color: #52723a;
+  background-color: #85ac66;
   color: white;
   padding: 8px 0;
   border-radius: 8px;

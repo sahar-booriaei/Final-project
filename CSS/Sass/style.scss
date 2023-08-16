@@ -8,51 +8,37 @@ body {
 }
 
 
-// button {
-//     cursor: pointer;
-// }
+.basketData {
+    width: 100%;
+    margin: 0;
+    background-color: #25301c;
 
-// .basket {
-//     position: relative;
-//     right: 2rem;
-// }
+    .basketItem {
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #85ac66 !important;
+        padding: 1rem;
+        margin: 1rem;
 
-// .value {
-//     background-color: lightcoral;
-//     color: white;
-//     width: 24px;
-//     height: 24px;
-//     border-radius: 50%;
-//     display: inline-flex;
-//     align-items: center;
-//     justify-content: center;
-// }
+    }
 
-// .primary {
-//     background-color: darkred !important;
-// }
+    .basketItem img {
+        width: 120px;
+    }
 
-// .basketItem {
-//     width: 80%;
-//     margin: auto;
-//     display: flex;
-//     justify-content: space-around;
-//     align-items: center;
-//     background-color: white !important;
-//     margin: 1rem;
+    .basketItem .card {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex: 1;
+    }
 
-// }
+}
 
-// .basketItem img {
-//     width: 120px;
-// }
 
-// .basketItem .card {
-//     display: flex;
-//     justify-content: space-around;
-//     align-items: center;
-//     flex: 1;
-// }
+
 
 
 #top {
@@ -150,7 +136,8 @@ body {
 }
 
 .second {
-    background-color: #85ac66;
+    // background-color: #85ac66;
+    background-color: #556d50;
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 3rem;
@@ -161,7 +148,8 @@ body {
         margin-top: 2rem;
 
         ul {
-            box-shadow: 10px 10px 10px 0 rgba(61, 61, 61, 0.6);
+            box-shadow: 10px 10px 10px 0 rgba(40, 40, 40, 0.6);
+            // box-shadow: 10px 10px 10px 0 rgba(61, 61, 61, 0.6);
 
             li {
                 a {
@@ -186,8 +174,9 @@ body {
             height: 550px;
             // padding: 1rem;
             background-color: rgb(235, 255, 235);
-            box-shadow: 10px 10px 10px 0 rgba(61, 61, 61, 0.6);
+            box-shadow: 10px 10px 10px 0 rgba(23, 23, 23, 0.6);
             margin: 1rem;
+            border-radius: 8px;
 
             div {
                 background-color: rgb(235, 255, 235);
@@ -199,9 +188,19 @@ body {
                     margin: 0;
                 }
 
+                .primary {
+                    background-color: darkred !important;
+                    &:hover {
+                        scale: 1;
+                        opacity: .7;
+                        cursor: context-menu;
+                    }
+                }
+
                 button {
                     border: none;
-                    background-color: #52723a;
+                    // background-color: #52723a;
+                    background-color: #85ac66;
                     color: white;
                     padding: 8px 0;
                     border-radius: 8px;

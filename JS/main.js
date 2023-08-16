@@ -71,6 +71,10 @@ five.addEventListener("click", () => {
 })
 
 
+let BasketStore = localStorage.getItem("Basket");
+Basket = JSON.parse(BasketStore);
+updateBasketCounter();
+
 window.addEventListener("load", () => {
   render(plants);
 });
