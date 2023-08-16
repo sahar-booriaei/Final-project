@@ -107,7 +107,24 @@ body {
 }
 
 
+.pay {
+    width: 100%;
+    background-color: #556d50;
+    padding: 1rem 2rem 2rem 9rem;
 
+    button {
+        padding: 8px 32px;
+        border: none;
+        border-radius: 8px;
+        transition: .5s;
+
+        &:hover {
+            scale: 1.1;
+            background-color: #25301c;
+            color: white;
+        }
+    }
+}
 
 
 #top {

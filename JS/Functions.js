@@ -13,7 +13,7 @@ function render(plantslist) {
                      <h6 class="pt-4"> Water: ${Water}</h6>
                      <h6 class="pt-4"> Price: ${price}</h6>
                      ${Basket.find((phrchase) => phrchase.id === id)
-        ? `<button onclick="" class="primary">AVAILABLE IN BASKET</button>`
+        ? `<button onclick="" class="primary">AVAILABLE IN CART</button>`
         : `<button onclick="addToCart(${id})">SHOP NOW</button>`
       }
                 </div>  
@@ -45,7 +45,7 @@ function renderBasket(plantslist) {
       <li class="basketItem" >
         <img src="./CSS/Images/${imgSrc}">
         <div class="d-flex justify-content-between align-items-center">
-           <h5 class="m-3"> Name: ${name}</h5>
+           <h5 class="m-3"> Product: ${name}</h5>
            <h6 class="m-3"> Price: ${price}</h6>
            <button class="m-5" onclick="removeFromBasket(${id})">REMOVE</button>
         </div>  
@@ -55,6 +55,11 @@ function renderBasket(plantslist) {
       ;
   }).join("");
   body.innerHTML += template;
+  body.innerHTML += `
+  <div class="pay">
+  <button>Final Payment</button>
+  </div>
+  `;
   updateBasketCounter();
 }
 
