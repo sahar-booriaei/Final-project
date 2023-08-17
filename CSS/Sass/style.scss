@@ -79,6 +79,16 @@ body {
         div {
             width: 70%;
 
+            input {
+                width: 50px;
+                cursor: pointer;
+                border-radius: 4px;
+                border: none;
+                text-decoration: none;
+                // text-align: center;
+                padding-left: 8px;
+            }
+
             button {
                 text-decoration: none;
                 padding: 4px 32px;
@@ -224,6 +234,7 @@ body {
 .second {
     // background-color: #85ac66;
     background-color: #556d50;
+    // background-color: #374033;
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 3rem;

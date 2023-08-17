@@ -47,6 +47,8 @@ function renderBasket(plantslist) {
         <div class="d-flex justify-content-between align-items-center">
            <h5 class="m-3"> Product: ${name}</h5>
            <h6 class="m-3"> Price: ${price}</h6>
+           <label for="count">Quantity: </label>
+              <input type="number" name="count" min="1" max="15" value="1" >
            <button class="m-5" onclick="removeFromBasket(${id})">REMOVE</button>
         </div>  
       </li>
