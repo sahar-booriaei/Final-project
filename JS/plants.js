@@ -171,4 +171,4 @@ const plants = [
         imgSrc: "15.webp",
 
     }
-]
+];

@@ -52,7 +52,7 @@
 //                    ${ (Basket.find(purchase => purchase.id === plant.id))
 //                     ? `<button class="primary">AVAILABLE IN CART</button>`
 //                     : `<button onclick="addToCart(${plant.id})">SHOP NOW</button>`
-                                      
+
 //                     }
 //               </div>  
 //       </section>
@@ -64,7 +64,6 @@
 
 
 function render(plantslist) {
-
   const template = plantslist.slice(start, end).map(plant => {
     const { id, name, Light, Water, price, imgSrc } = plant;
     return `
@@ -75,11 +74,7 @@ function render(plantslist) {
                    <h6 class="pt-4"> Light: ${Light}</h6>
                    <h6 class="pt-4"> Water: ${Water}</h6>
                    <h6 class="pt-4"> Price:$ ${price}</h6
-                   ${(id) => {
-                      Basket.find((phrchase) => phrchase.id === id)
-                      ? `<button onclick="" class="primary">AVAILABLE IN CART</button>`
-                      : `<button onclick="addToCart(${id})">SHOP NOW</button> `
-                    }}
+                   <button>${getButton(id)}</button
               </div>  
       </section>
       `
@@ -88,6 +83,13 @@ function render(plantslist) {
   root.innerHTML = template;
 }
 
+function getButton(id) {
+  if (Basket.find((purchase) => purchase && purchase.id === id)) {
+    return `<button class="primary">AVAILABLE IN CART</button>`;
+  } else {
+    return `<button onclick="addToCart(${id})">SHOP NOW</button>`;
+  }
+}
 
 
 function renderBasket(plantslist) {
@@ -114,13 +116,15 @@ function renderBasket(plantslist) {
            <h6 class="m-3"> Price: ${price}</h6>
            <label for="count">Quantity: </label>
               <input id="counter" type="number" name="count" min="1" max="15" value="1" >
-           <button class="m-5" onclick="removeFromBasket(${id})">REMOVE</button>
+           ${removeButton(id)}
         </div>  
       </li>
     </div>
       `
       ;
+
   }).join("");
+
   body.innerHTML += template;
   body.innerHTML += `
   <div class="pay">
@@ -130,25 +134,32 @@ function renderBasket(plantslist) {
   updateBasketCounter();
 }
 
+function removeButton(id) {
+  if (Basket.find((purchase) => purchase.id === id)) {
+    return `<button class="m-5" onclick="removeFromBasket(${id})">REMOVE</button>`;
+  }
+}
 
 const addToCart = (id) => {
   let selectedPlant = plants.find((plant) => plant.id === id);
   Basket.push(selectedPlant);
-  localStorage.setItem("Basket", JSON.stringify(Basket));
+  // localStorage.setItem("Basket", JSON.stringify(Basket));
   sum += Number(plants[selectedPlant.id].price);
   totalPrice.textContent = `$ ${sum}.00`;
   updateBasketCounter();
   render();
-};
+}
 
 
 
 const removeFromBasket = (id) => {
   let index = Basket.findIndex((plant) => plant.id === id);
-  Basket.splice(index, 1);
-  localStorage.setItem("Basket", JSON.stringify(Basket));
-  updateBasketCounter();
-  renderBasket(Basket);
+  if (index !== -1) {
+    Basket.splice(index, 1);
+    // localStorage.setItem("Basket", JSON.stringify(Basket));
+    updateBasketCounter();
+    renderBasket(Basket);
+  }
 };
 
 

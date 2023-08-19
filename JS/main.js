@@ -2,7 +2,7 @@
 // dom nodes
 const root = document.getElementById("root");
 let Basket = [];
-let body = document.getElementById("body")
+let body = document.getElementById("body");
 let one = document.getElementById("one");
 let two = document.getElementById("two");
 let three = document.getElementById("three");
@@ -15,9 +15,9 @@ let end = 4;
 let button ;
 
 
-let BasketStore = localStorage.getItem("Basket");
-Basket = JSON.parse(BasketStore);
-updateBasketCounter();
+// let BasketStore = localStorage.getItem("Basket");
+// Basket = JSON.parse(BasketStore);
+// updateBasketCounter();
 
 
 // events
