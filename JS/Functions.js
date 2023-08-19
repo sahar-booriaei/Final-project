@@ -61,6 +61,8 @@
 // } }
 
 
+
+
 function render(plantslist) {
 
   const template = plantslist.slice(start, end).map(plant => {
