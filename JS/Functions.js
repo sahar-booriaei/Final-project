@@ -143,9 +143,10 @@ function removeButton(id) {
 const addToCart = (id) => {
   let selectedPlant = plants.find((plant) => plant.id === id);
   Basket.push(selectedPlant);
-  // localStorage.setItem("Basket", JSON.stringify(Basket));
+  localStorage.setItem("Basket", JSON.stringify(Basket));
   sum += Number(plants[selectedPlant.id].price);
   totalPrice.textContent = `$ ${sum}.00`;
+  console.log(selectedPlant);
   updateBasketCounter();
   render();
 }
@@ -156,7 +157,7 @@ const removeFromBasket = (id) => {
   let index = Basket.findIndex((plant) => plant.id === id);
   if (index !== -1) {
     Basket.splice(index, 1);
-    // localStorage.setItem("Basket", JSON.stringify(Basket));
+    localStorage.setItem("Basket", JSON.stringify(Basket));
     updateBasketCounter();
     renderBasket(Basket);
   }

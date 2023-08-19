@@ -12,12 +12,13 @@ let totalPrice = document.querySelector(".totalPrice");
 let sum = 0;
 let start = 0;
 let end = 4;
-let button ;
+let button;
 
-
-// let BasketStore = localStorage.getItem("Basket");
-// Basket = JSON.parse(BasketStore);
-// updateBasketCounter();
+// clear localStorage
+// let BasketStore = localStorage.clear()
+let BasketStore = localStorage.getItem("Basket");
+Basket = BasketStore ? JSON.parse(BasketStore) : [];
+updateBasketCounter();
 
 
 // events
