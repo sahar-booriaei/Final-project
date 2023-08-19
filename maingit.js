@@ -1,4 +1,3 @@
-
 // dom nodes
 const root = document.getElementById("root");
 let Basket = [];
@@ -8,20 +7,9 @@ let two = document.getElementById("two");
 let three = document.getElementById("three");
 let four = document.getElementById("four");
 let five = document.getElementById("five");
-let totalPrice = document.querySelector(".totalPrice");
-let sum = 0;
 let start = 0;
 let end = 4;
-let button ;
-
-
-let BasketStore = localStorage.getItem("Basket");
-Basket = JSON.parse(BasketStore);
-updateBasketCounter();
-
-
 // events
-
 one.addEventListener("click", () => {
   one.classList.add("active")
   two.classList.remove("active")
@@ -32,8 +20,6 @@ one.addEventListener("click", () => {
   end = 4;
   render(plants);
 })
-
-
 two.addEventListener("click", () => {
   one.classList.remove("active")
   two.classList.add("active")
@@ -44,7 +30,6 @@ two.addEventListener("click", () => {
   end = 8;
   render(plants);
 })
-
 three.addEventListener("click", () => {
   one.classList.remove("active")
   two.classList.remove("active")
@@ -55,7 +40,6 @@ three.addEventListener("click", () => {
   end = 12;
   render(plants);
 })
-
 four.addEventListener("click", () => {
   one.classList.remove("active")
   two.classList.remove("active")
@@ -66,7 +50,6 @@ four.addEventListener("click", () => {
   end = 16;
   render(plants);
 })
-
 five.addEventListener("click", () => {
   one.classList.remove("active")
   two.classList.remove("active")
@@ -79,10 +62,10 @@ five.addEventListener("click", () => {
 })
 
 
+let BasketStore = localStorage.getItem("Basket");
+Basket = JSON.parse(BasketStore);
+// updateBasketCounter();
 
 window.addEventListener("load", () => {
   render(plants);
 });
-
-
-

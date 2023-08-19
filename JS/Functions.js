@@ -1,35 +1,98 @@
 
 // functions 
 
+
+
+
+
+// plantslist.slice(start, end).map(plant => {
+//   const { id, name, Light, Water, price, imgSrc } = plant;
+
+//   let buttonText = '';
+//   let buttonAction = '';
+
+//   if (Basket.find((purchase) => purchase.id === id)) {
+//     buttonText = 'AVAILABLE IN CART';
+//     buttonAction = '';
+//   } else {
+//     buttonText = 'SHOP NOW';
+//     buttonAction = `addToCart(${id})`;
+//   }
+
+//   return `
+//   <section class="plant" >
+//       <img src="./CSS/Images/${imgSrc}">
+//           <div class="card">
+//                <h5 class="pt-4"> Name: ${name}</h6>
+//                <h6 class="pt-4"> Light: ${Light}</h6>
+//                <h6 class="pt-4"> Water: ${Water}</h6>
+//                <h6 class="pt-4"> Price:$ ${price}</h6>
+//                <button onclick="${buttonAction}" class="primary">${buttonText}</button>
+//           </div>  
+//   </section>
+//   `;
+
+// }).join("");
+// root.innerHTML = template;
+
+
+
+// 
+
+// const render = (plants) => {
+//  for (const plant of plants){
+//     let template =  `
+//       <section class="plant" >
+//           <img src="./CSS/Images/${plant.imgSrc}">
+//               <div class="card">
+//                    <h5 class="pt-4"> Name: ${plant.name}</h6>
+//                    <h6 class="pt-4"> Light: ${plant.Light}</h6>
+//                    <h6 class="pt-4"> Water: $plant.{Water}</h6>
+//                    <h6 class="pt-4"> Price:$ ${plant.price}</h6>
+//                    ${ (Basket.find(purchase => purchase.id === plant.id))
+//                     ? `<button class="primary">AVAILABLE IN CART</button>`
+//                     : `<button onclick="addToCart(${plant.id})">SHOP NOW</button>`
+                                      
+//                     }
+//               </div>  
+//       </section>
+//       `;
+//   root.innerHTML = template;
+// } }
+
+
 function render(plantslist) {
+
   const template = plantslist.slice(start, end).map(plant => {
     const { id, name, Light, Water, price, imgSrc } = plant;
     return `
-        <section class="plant" >
-            <img src="./CSS/Images/${imgSrc}">
-                <div class="card">
-                     <h5 class="pt-4"> Name: ${name}</h6>
-                     <h6 class="pt-4"> Light: ${Light}</h6>
-                     <h6 class="pt-4"> Water: ${Water}</h6>
-                     <h6 class="pt-4"> Price: ${price}</h6>
-                     ${Basket.find((phrchase) => phrchase.id === id)
-        ? `<button onclick="" class="primary">AVAILABLE IN CART</button>`
-        : `<button onclick="addToCart(${id})">SHOP NOW</button>`
-      }
-                </div>  
-        </section>
-        `
+      <section class="plant" >
+          <img src="./CSS/Images/${imgSrc}">
+              <div class="card">
+                   <h5 class="pt-4"> Name: ${name}</h6>
+                   <h6 class="pt-4"> Light: ${Light}</h6>
+                   <h6 class="pt-4"> Water: ${Water}</h6>
+                   <h6 class="pt-4"> Price:$ ${price}</h6
+                   ${(id) => {
+                      Basket.find((phrchase) => phrchase.id === id)
+                      ? `<button onclick="" class="primary">AVAILABLE IN CART</button>`
+                      : `<button onclick="addToCart(${id})">SHOP NOW</button> `
+                    }}
+              </div>  
+      </section>
+      `
       ;
   }).join("");
-
   root.innerHTML = template;
 }
+
 
 
 function renderBasket(plantslist) {
   body.innerHTML = `
   <div class="basket d-flex justify-content-between align-items-center">
   <a class="basket__home" href="./index.html">Home</a>
+  <span>00.00$</span>
   <a class="basket__a" href="#">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
       <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
@@ -48,7 +111,7 @@ function renderBasket(plantslist) {
            <h5 class="m-3"> Product: ${name}</h5>
            <h6 class="m-3"> Price: ${price}</h6>
            <label for="count">Quantity: </label>
-              <input type="number" name="count" min="1" max="15" value="1" >
+              <input id="counter" type="number" name="count" min="1" max="15" value="1" >
            <button class="m-5" onclick="removeFromBasket(${id})">REMOVE</button>
         </div>  
       </li>
@@ -70,6 +133,8 @@ const addToCart = (id) => {
   let selectedPlant = plants.find((plant) => plant.id === id);
   Basket.push(selectedPlant);
   localStorage.setItem("Basket", JSON.stringify(Basket));
+  sum += Number(plants[selectedPlant.id].price);
+  totalPrice.textContent = `$ ${sum}.00`;
   updateBasketCounter();
   render();
 };
