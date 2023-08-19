@@ -143,10 +143,10 @@ function removeButton(id) {
 const addToCart = (id) => {
   let selectedPlant = plants.find((plant) => plant.id === id);
   Basket.push(selectedPlant);
-  localStorage.setItem("Basket", JSON.stringify(Basket));
-  sum += Number(plants[selectedPlant.id].price);
+  sum += Number(selectedPlant.price);
   totalPrice.textContent = `$ ${sum}.00`;
-  console.log(selectedPlant);
+  localStorage.setItem("totalPrice.textContent", JSON.stringify(totalPrice.textContent));
+  localStorage.setItem("Basket", JSON.stringify(Basket));
   updateBasketCounter();
   render();
 }

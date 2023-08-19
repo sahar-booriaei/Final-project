@@ -13,12 +13,17 @@ let sum = 0;
 let start = 0;
 let end = 4;
 let button;
+// let totalSum = totalPrice.textContent;
 
 // clear localStorage
 // let BasketStore = localStorage.clear()
 let BasketStore = localStorage.getItem("Basket");
 Basket = BasketStore ? JSON.parse(BasketStore) : [];
+let priceCount = localStorage.getItem("totalPrice.textContent");
+totalPrice.textContent = priceCount ? JSON.parse(priceCount) : 0;
+// totalPrice.textContent = JSON.parse(priceCount);
 updateBasketCounter();
+
 
 
 // events

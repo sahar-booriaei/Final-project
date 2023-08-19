@@ -1,7 +1,7 @@
 
 const plants = [
     {
-        id: 1,
+        id: 0,
         name: "Alocasia Velvet",
         Light: "Low to Bright Indirect",
         Water: "Medium",
@@ -9,7 +9,7 @@ const plants = [
         imgSrc: "1.webp",
     },
     {
-        id: 2,
+        id: 1,
         name: "Tropic Marianne",
         Light: "Low to Bright Indirect",
         Water: "Medium",
@@ -17,7 +17,7 @@ const plants = [
         imgSrc: "2.webp",
     },
     {
-        id: 3,
+        id: 2,
         name: "Ficus Lyrata",
         Light: "Bright Indirect",
         Water: "Medium",
@@ -25,7 +25,7 @@ const plants = [
         imgSrc: "3.webp",
     },
     {
-        id: 4,
+        id: 3,
         name: "Hoya Chelsea",
         Light: "Bright Indirect",
         Water: "Low to Medium",
@@ -33,7 +33,7 @@ const plants = [
         imgSrc: "4.webp",
     },
     {
-        id: 5,
+        id: 4,
         name: "Cordyline 'Ruby'",
         Light: "Low to Bright Indirect",
         Water: "Medium",
@@ -41,7 +41,7 @@ const plants = [
         imgSrc: "5.webp",
     },
     {
-        id: 6,
+        id: 5,
         name: "Purple Shamrock",
         Light: "Low to Bright Indirect",
         Water: "Medium",
@@ -50,7 +50,7 @@ const plants = [
 
     },
     {
-        id: 7,
+        id: 6,
         name: "Sansevieria Silver",
         Light: "Low to Bright Indirect",
         Water: "Low",
@@ -59,7 +59,7 @@ const plants = [
 
     },
     {
-        id: 8,
+        id: 7,
         name: "Calathea Misto",
         Light: "Low to Bright Indirect",
         Water: "Medium to High",
@@ -68,7 +68,7 @@ const plants = [
 
     },
     {
-        id: 9,
+        id: 8,
         name: "Hoya Green Ghost",
         Light: "Bright Indirect",
         Water: "Low to Medium",
@@ -77,7 +77,7 @@ const plants = [
 
     },
     {
-        id: 10,
+        id: 9,
         name: "Monstera deliciosa",
         Light: "Low to Bright Indirect",
         Water: "Medium",
@@ -85,7 +85,7 @@ const plants = [
         imgSrc: "19.webp",
     },
     {
-        id: 11,
+        id: 10,
         name: "Farfugium 'Firefly'",
         Light: "Low to Bright Indirect",
         Water: "Medium",
@@ -94,7 +94,7 @@ const plants = [
 
     },
     {
-        id: 12,
+        id: 11,
         name: "Syngonium Berry",
         Light: "Low to Bright Indirect",
         Water: "Medium",
@@ -103,7 +103,7 @@ const plants = [
 
     },
     {
-        id: 13,
+        id: 12,
         name: "Hoya Australis Hoop",
         Light: "Bright Indirect",
         Water: "Low to Medium",
@@ -112,7 +112,7 @@ const plants = [
 
     },
     {
-        id: 14,
+        id: 13,
         name: "Pothos Silvery Anne",
         Light: "Medium Indirect",
         Water: "Low to Medium",
@@ -120,7 +120,7 @@ const plants = [
         imgSrc: "17.webp",
     },
     {
-        id: 15,
+        id: 14,
         name: "Sansevieria Sunshine",
         Light: "Low to Bright Indirect",
         Water: "Low",
@@ -128,7 +128,7 @@ const plants = [
         imgSrc: "11.webp",
     },
     {
-        id: 16,
+        id: 15,
         name: "Winged Pitcher Plant",
         Light: "Bright Indirect",
         Water: "Low to Medium",
@@ -137,7 +137,7 @@ const plants = [
 
     },
     {
-        id: 17,
+        id: 16,
         name: "Spider Plant Green Hawaiian",
         Light: "Medium Bright",
         Water: "Medium",
@@ -146,7 +146,7 @@ const plants = [
 
     },
     {
-        id: 18,
+        id: 17,
         name: "Calathea Green Lipstick",
         Light: "Low to Bright Indirect",
         Water: "Medium to High",
@@ -154,7 +154,7 @@ const plants = [
         imgSrc: "6.webp",
     },
     {
-        id: 19,
+        id: 18,
         name: "Chinese Evergreen 'Butterfly'",
         Light: "Low to Medium",
         Water: "Medium",
@@ -163,7 +163,7 @@ const plants = [
 
     },
     {
-        id: 20,
+        id: 19,
         name: "Philodendron 'Summer Glory'",
         Light: "Low to Bright Indirect",
         Water: "Medium",
