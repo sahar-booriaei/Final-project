@@ -9,22 +9,51 @@ let three = document.getElementById("three");
 let four = document.getElementById("four");
 let five = document.getElementById("five");
 let totalPrice = document.querySelector(".totalPrice");
-let sum = 0;
+let totalSum;
+totalPrice.textContent = totalSum;
 let start = 0;
 let end = 4;
 let button;
-// let totalSum = totalPrice.textContent;
+
+
+
+window.onload = function () {
+  let BasketStore = localStorage.getItem("Basket");
+  Basket = BasketStore ? JSON.parse(BasketStore) : [];
+  console.log(totalSum)
+  let priceCount = localStorage.getItem("totalSum");
+  totalSum = priceCount ? JSON.parse(priceCount) : 0;
+  totalPrice.textContent = `$ ${totalSum}.00`;
+  updateBasketCounter();
+}
 
 // clear localStorage
 // let BasketStore = localStorage.clear()
-let BasketStore = localStorage.getItem("Basket");
-Basket = BasketStore ? JSON.parse(BasketStore) : [];
-let priceCount = localStorage.getItem("totalPrice.textContent");
-totalPrice.textContent = priceCount ? JSON.parse(priceCount) : 0;
-// totalPrice.textContent = JSON.parse(priceCount);
-updateBasketCounter();
+// let BasketStore = localStorage.getItem("Basket");
+// Basket = BasketStore ? JSON.parse(BasketStore) : [];
+// let priceCount = localStorage.getItem("totalSum");
+// totalSum = priceCount ? JSON.parse(priceCount) : 0;
+// debugger;
+// updateBasketCounter();
 
 
+// window.onload = function () {
+//   let BasketStore = localStorage.getItem("Basket");
+//   Basket = BasketStore ? JSON.parse(BasketStore) : [];
+//   console.log(totalSum)
+//   let priceCount = localStorage.getItem("totalSum");
+//   totalSum = priceCount ? JSON.parse(priceCount) : 0;
+//   totalPrice.textContent = totalSum;
+//   updateBasketCounter();
+// }
+
+// if (totalSum && Array.isArray(totalSum)) {
+//   let sum = 0;
+//   for (let i = 0; i < totalSum.length; i++) {
+//     sum += parseInt(totalSum[i]);
+//   }
+//   // display sum
+// }
 
 // events
 
