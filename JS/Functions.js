@@ -7,8 +7,8 @@ function render(plantslist) {
     const { id, name, Light, Water, price, imgSrc } = plant;
     return `
       <section class="plant" >
-          <img class="plant__img" src="./CSS/Images/${imgSrc}">
-              <div class="card">
+          <img class="plant__img w-100 p-3" src="./CSS/Images/${imgSrc}">
+              <div class="card text-start p-3">
                    <h5 class="pt-4"> Name: ${name}</h6>
                    <h6 class="pt-4 card__content"> Light: ${Light}</h6>
                    <h6 class="pt-4 card__content"> Water: ${Water}</h6>
@@ -47,23 +47,23 @@ function renderBasket(plantslist) {
   // <input class="counter" type="number" name="count" min="1" max="15" value="1" data-price="${price}">
   // <span class="priceSum"></span>
   body.innerHTML = `
-  <div class="basket d-flex justify-content-between align-items-center">
+  <div class="basket w-100 p-t-2 p-r-5 p-b-1 p-l-5 d-flex justify-content-between align-items-center">
   <a class="basket__home" href="./index.html">Home</a>
   <span>${totalPrice.textContent = `$ ${totalSum}.00`}</span>
-  <a class="basket__a" href="#">
+  <a class="basket__a position-relative d-block" href="#">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
       <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
       <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
     </svg>
-    <span class="value">0</span>
+    <span class="value position-absolute d-inline-flex align-items-center justify-content-center">0</span>
   </a>
   `;
   const template = plantslist.map(plant => {
     const { id, name, Light, Water, price, imgSrc } = plant;
     return `
-    <div class="basketData d-flex justify-content-center align-items-center">
-      <li class="basketItem" >
-        <img class="basketItem__img" src="./CSS/Images/${imgSrc}">
+    <div class="basketData w-100 m-0 p-b-3 d-flex justify-content-center align-items-center">
+      <li class="basketItem d-flex justify-content-around justify-content-center m-1 p-1" >
+        <img class="basketItem__img p-2" src="./CSS/Images/${imgSrc}">
         <div class="basketItem__content d-flex justify-content-between align-items-center">
            <h5 class="m-3"> Product: ${name}</h5>
            <h6 class="m-3"> Price: ${price}</h6>
@@ -77,7 +77,7 @@ function renderBasket(plantslist) {
   }).join("");
   body.innerHTML += template;
   body.innerHTML += `
-  <div class="pay">
+  <div class="pay w-100 p-t-1 p-r-2 p-b-2 ">
   <button class="pay__button">Final Payment</button>
   </div>
   `;
