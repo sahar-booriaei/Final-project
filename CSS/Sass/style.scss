@@ -7,6 +7,9 @@ body {
     box-sizing: border-box;
 }
 
+
+
+
 .basket {
     width: 100%;
     padding: 2rem 5rem 1rem 5rem;
@@ -128,15 +131,6 @@ body {
 }
 
 
-#top {
-    background-color: rgb(0, 0, 0);
-    opacity: .5;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
-}
 
 .top {
     background-image: url('../Images/hero-section-bg.jpg');
@@ -145,9 +139,20 @@ body {
     background-size: cover;
     background-position: bottom;
 
-    header {
+    #top {
+        background-color: rgb(0, 0, 0);
+        opacity: .5;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+    }
 
-        img {
+
+    .top__header {
+
+        .container__img {
             opacity: 1;
             z-index: 1;
             position: absolute;
@@ -156,14 +161,14 @@ body {
             width: 13%;
         }
 
-        nav {
+        .container__nav {
             position: absolute;
             z-index: 1;
             right: 2rem;
             top: 2rem;
             color: white;
 
-            a {
+            .container__nav--a {
                 text-decoration: none;
                 color: white;
                 right: 2rem;
@@ -184,7 +189,7 @@ body {
                 padding-top: 1.2rem;
                 margin-left: 2rem;
 
-                span {
+                .shopping-icon--span {
                     position: absolute;
                     right: 0;
                     top: 0;
@@ -215,7 +220,7 @@ body {
         transform: translate(-50%, -50%);
         width: 60%;
 
-        h1 {
+        .top__content--h1 {
             font-size: 4rem;
             opacity: .7;
         }
@@ -318,20 +323,20 @@ body {
 
     height: 100vh;
 
-    img {
+    .third__img {
         width: 50%;
     }
 
-    div {
+    .third__container {
 
-        div {
+        .container__content {
             width: 70%;
 
-            h2 {
+            .content__h2 {
                 margin: 2rem 0;
             }
 
-            button {
+            .content__button {
                 margin: 2rem 0;
                 background-color: #52723a;
                 text-decoration: none;
@@ -354,22 +359,22 @@ body {
     height: 100vh;
     flex-direction: column;
 
-    h1 {
+    .fourth__h1 {
         margin-bottom: 2rem;
         margin-top: 6rem;
     }
 
-    span {
+    .fourth__span {
         display: block;
         border-bottom: .5px solid #52723a;
         width: 5%;
     }
 
-    div {
+    .fourth__container {
         width: 80%;
         margin: auto;
 
-        div {
+        .container__content {
             text-align: center;
             padding: 2rem;
             transition: .5s;
@@ -378,18 +383,18 @@ body {
                 scale: 1.1;
             }
 
-            svg {
+            .container__content--svg {
                 margin-bottom: 2rem;
                 opacity: .7;
                 color: #7bab57;
             }
 
-            img {
+            .container__content--img {
                 border-radius: 50%;
                 margin: 2rem;
             }
 
-            .opacity {
+            .container__content--p {
                 opacity: .7;
             }
         }
@@ -397,15 +402,6 @@ body {
 }
 
 
-#bottom {
-    background-color: rgb(0, 0, 0);
-    opacity: .5;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
-}
 
 .fifth {
     height: 100vh;
@@ -416,17 +412,28 @@ body {
     background-position: bottom;
     position: relative;
 
-    div {
+    #bottom {
+        background-color: rgb(0, 0, 0);
+        opacity: .5;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+    }
+
+
+    .fifth__content {
         position: absolute;
         text-align: center;
         line-height: 5rem;
 
-        h1 {
+        .fifth__content--h1 {
             font-size: 4rem;
             opacity: .7;
         }
 
-        button {
+        .fifth__content--button {
             text-decoration: none;
             padding: 4px 32px;
             border: none;
@@ -452,7 +459,7 @@ body {
     margin-bottom: 3rem;
     height: 35vh;
 
-    div {
+    .sixth__div {
         margin: 1rem;
         transition: .5s;
 
@@ -476,13 +483,13 @@ body {
     }
 }
 
-footer {
+.footer {
     background-color: #25301c;
     color: white;
     flex-direction: column;
     padding: 4rem;
 
-    a {
+    .footer--a {
         text-decoration: none;
         color: white;
         transition: .5s;
@@ -495,19 +502,19 @@ footer {
         }
     }
 
-    div {
+    .footer__content {
         text-align: center;
 
-        h4 {
+        .footer__content--h4 {
             margin-top: 4rem;
             margin-bottom: 1rem;
         }
 
-        input {
+        .footer__content--input {
             padding: 8px 128px;
         }
 
-        button {
+        .footer__content--button {
             padding: 8px 16px;
             margin-left: 1rem;
             border: none;
@@ -529,6 +536,7 @@ footer {
             margin: 2rem 2rem 0 2rem;
             opacity: .7;
             transition: .5s;
+            padding: 1rem;
 
             &:hover {
                 scale: 1.6;
