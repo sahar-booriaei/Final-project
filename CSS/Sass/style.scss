@@ -37,7 +37,7 @@ body {
             color: #85ac66;
         }
 
-        span {
+        .value {
             position: absolute;
             right: -24px;
             top: -16px;
@@ -76,20 +76,11 @@ body {
         box-shadow: 10px 10px 10px 0 rgba(40, 40, 40, 0.6);
 
 
-        div {
+        .basketItem__content {
             width: 70%;
 
-            input {
-                width: 50px;
-                cursor: pointer;
-                border-radius: 4px;
-                border: none;
-                text-decoration: none;
-                // text-align: center;
-                padding-left: 8px;
-            }
 
-            button {
+            .basketItem__content--button {
                 text-decoration: none;
                 padding: 4px 32px;
                 border: none;
@@ -106,7 +97,7 @@ body {
             }
         }
 
-        img {
+        .basketItem__img {
             width: 200px;
             padding: 1rem;
 
@@ -122,7 +113,7 @@ body {
     background-color: #556d50;
     padding: 1rem 2rem 2rem 9rem;
 
-    button {
+    .pay__button {
         padding: 8px 32px;
         border: none;
         border-radius: 8px;
@@ -242,15 +233,15 @@ body {
     flex-direction: column;
     // height: 100vh;
 
-    nav {
+    .second__nav {
         margin-top: 2rem;
 
-        ul {
+        .pagination {
             box-shadow: 10px 10px 10px 0 rgba(40, 40, 40, 0.6);
             // box-shadow: 10px 10px 10px 0 rgba(61, 61, 61, 0.6);
 
-            li {
-                a {
+            .second__pagination--li {
+                .second__li--a {
                     color: #25301c;
                     border: 1px solid;
                     padding: 4px 24px;
@@ -260,11 +251,11 @@ body {
 
     }
 
-    h1 {
+    .second__title {
         color: white;
     }
 
-    div {
+    #root {
         flex-wrap: wrap;
 
         .plant {
@@ -276,13 +267,13 @@ body {
             margin: 1rem;
             border-radius: 8px;
 
-            div {
+            .card {
                 background-color: rgb(235, 255, 235);
                 border: none;
                 text-align: left;
                 padding: 1rem;
 
-                h6 {
+                .card__content {
                     margin: 0;
                 }
 
@@ -296,9 +287,8 @@ body {
                     }
                 }
 
-                button {
+                .card__button {
                     border: none;
-                    // background-color: #52723a;
                     background-color: #85ac66;
                     color: white;
                     padding: 8px 0;
@@ -314,7 +304,7 @@ body {
                 }
             }
 
-            img {
+            .plant__img {
                 width: 100%;
                 height: 280px;
                 padding: 1rem;

@@ -16,46 +16,20 @@ let end = 4;
 let button;
 
 
+// events
+// let BasketStore = localStorage.clear();
+
 
 window.onload = function () {
   let BasketStore = localStorage.getItem("Basket");
   Basket = BasketStore ? JSON.parse(BasketStore) : [];
-  console.log(totalSum)
   let priceCount = localStorage.getItem("totalSum");
   totalSum = priceCount ? JSON.parse(priceCount) : 0;
   totalPrice.textContent = `$ ${totalSum}.00`;
   updateBasketCounter();
 }
 
-// clear localStorage
-// let BasketStore = localStorage.clear()
-// let BasketStore = localStorage.getItem("Basket");
-// Basket = BasketStore ? JSON.parse(BasketStore) : [];
-// let priceCount = localStorage.getItem("totalSum");
-// totalSum = priceCount ? JSON.parse(priceCount) : 0;
-// debugger;
-// updateBasketCounter();
 
-
-// window.onload = function () {
-//   let BasketStore = localStorage.getItem("Basket");
-//   Basket = BasketStore ? JSON.parse(BasketStore) : [];
-//   console.log(totalSum)
-//   let priceCount = localStorage.getItem("totalSum");
-//   totalSum = priceCount ? JSON.parse(priceCount) : 0;
-//   totalPrice.textContent = totalSum;
-//   updateBasketCounter();
-// }
-
-// if (totalSum && Array.isArray(totalSum)) {
-//   let sum = 0;
-//   for (let i = 0; i < totalSum.length; i++) {
-//     sum += parseInt(totalSum[i]);
-//   }
-//   // display sum
-// }
-
-// events
 
 one.addEventListener("click", () => {
   one.classList.add("active")
