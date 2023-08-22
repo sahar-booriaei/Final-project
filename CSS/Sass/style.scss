@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    height: 100vh;
+    height: $height-100;
 }
 
 * {
@@ -8,37 +8,46 @@ body {
 }
 
 
-// width & height:
-$width-24: 24px;
-$height-24: 24px;
-$width80: 80%;
-$width70: 70%;
-$width200px: 200px;
-$height-100: 100vh;
-$percent-50: 50%; 
-$percent-60: 60%
-$width-300: 300px;
-$height-550: 550px;
+// Pixel:
+$eight: 8px;
+$pixel-24: 24px;
+$pixel-200: 200px;
+$pixel-300: 300px;
+$pixel-550: 550px;
 
+
+// percent: 
+$percent-50: 50%;
+$percent-60: 60%;
+$percent-70: 70%;
+$percent-80: 80%;
+$percent-90: 90%;
+
+
+// vh:
+$height-100: 100vh;
 
 
 // seconds:
 $halfSecond: .5s;
 
+
 // scale:
 $scale: 1.1;
-// padding & margin:
 
+// padding-pixel
 $padding8-16: 8px 16px;
 $padding4-32: 4px 32px;
 $padding8-32: 8px 32px;
 $padding4-24: 4px 24px;
 $padding8-24: 8px 24px;
-$eight: 8px;
-$twoRem: 2rem;
+
+// rem:
 $oneRem: 1rem;
+$twoRem: 2rem;
 $threeRem: 3rem;
 $fourRem: 4rem;
+$fiveRem: 5rem;
 $sixRem: 6rem;
 
 // colors:
@@ -81,11 +90,11 @@ $darkred: darkred;
         .value {
             right: -24px;
             top: -16px;
-            border-radius: 50%;
+            border-radius: $percent-50;
             background-color: $white;
             color: $black;
-            width: $width-24;
-            height: $height-24;
+            width: $pixel-24;
+            height: $pixel-24;
         }
 
     }
@@ -96,14 +105,14 @@ $darkred: darkred;
 
 
     .basketItem {
-        width: $width80;
+        width: $percent-80;
         margin: auto;
         background-color: $green5 !important;
         box-shadow: 10px 10px 10px 0 rgba(40, 40, 40, 0.6);
 
 
         .basketItem__content {
-            width: $width70;
+            width: $percent-70;
 
 
             .basketItem__content--button {
@@ -123,7 +132,7 @@ $darkred: darkred;
         }
 
         .basketItem__img {
-            width: $width200px;
+            width: $pixel-200;
 
         }
 
@@ -203,11 +212,11 @@ $darkred: darkred;
                 .shopping-icon--span {
                     right: 0;
                     top: 0;
-                    border-radius: 50%;
+                    border-radius: $percent-50;
                     background-color: $white;
                     color: $black;
-                    width: $width-24;
-                    height: $height-24;
+                    width: $pixel-24;
+                    height: $pixel-24;
                 }
 
                 &:hover {
@@ -259,8 +268,8 @@ $darkred: darkred;
         flex-wrap: wrap;
 
         .plant {
-            width: $width-300;
-            height: $height-550;
+            width: $pixel-300;
+            height: $pixel-550;
             background-color: $green6;
             box-shadow: 10px 10px 10px 0 rgba(23, 23, 23, 0.6);
             margin: $oneRem;
@@ -290,7 +299,7 @@ $darkred: darkred;
                     color: $white;
                     padding: $eight 0;
                     border-radius: $eight;
-                    width: $width80;
+                    width: $percent-80;
                     margin: $oneRem auto 0 auto;
                     transition: $halfSecond;
 
@@ -315,7 +324,7 @@ $darkred: darkred;
     .third__container {
 
         .container__content {
-            width: $width70;
+            width: $percent-70;
 
             .content__h2 {
                 margin: $twoRem 0;
@@ -354,7 +363,7 @@ $darkred: darkred;
     }
 
     .fourth__container {
-        width: $width80;
+        width: $percent-80;
         margin: auto;
 
         .container__content {
@@ -369,7 +378,7 @@ $darkred: darkred;
             }
 
             .container__content--img {
-                border-radius: 50%;
+                border-radius: $percent-50;
             }
 
         }
@@ -394,7 +403,7 @@ $darkred: darkred;
 
 
     .fifth__content {
-        line-height: 5rem;
+        line-height: $fiveRem;
 
         .fifth__content--h1 {
             font-size: $fourRem;
@@ -420,7 +429,7 @@ $darkred: darkred;
 
 
 .sixth {
-    width: 90%;
+    width: $percent-90;
     margin: auto;
     height: 35vh;
 
@@ -440,7 +449,7 @@ $darkred: darkred;
         .icon {
             background-color: $green4;
             color: $white;
-            border-radius: 50%;
+            border-radius: $percent-50;
             padding: $oneRem;
         }
     }
@@ -465,7 +474,7 @@ $darkred: darkred;
     }
 
     .footer__content {
-        
+
 
 
         .footer__content--input {

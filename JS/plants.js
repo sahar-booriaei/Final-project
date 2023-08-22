@@ -116,7 +116,7 @@ const plants = [
         name: "Pothos Silvery Anne",
         Light: "Medium Indirect",
         Water: "Low to Medium",
-        price: "22.50",
+        price: "22.00",
         imgSrc: "17.webp",
     },
     {
@@ -124,7 +124,7 @@ const plants = [
         name: "Sansevieria Sunshine",
         Light: "Low to Bright Indirect",
         Water: "Low",
-        price: "19.50",
+        price: "19.00",
         imgSrc: "11.webp",
     },
     {
@@ -141,7 +141,7 @@ const plants = [
         name: "Spider Plant Green Hawaiian",
         Light: "Medium Bright",
         Water: "Medium",
-        price: "18.50",
+        price: "18.00",
         imgSrc: "18.webp",
 
     },
